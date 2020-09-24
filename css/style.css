@@ -1,24 +1,26 @@
 /* GENERAL STYLES */
-*{
-  box-sizing: border-box;
-  margin: auto;
-}
 body{
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 /* STYLE */
 .white{
   color: white;
-  margin-bottom:10px;
 }
-h3{
-  margin-bottom: 10px;
+.desktop{
+  display: none;
+}
+.grey{
+  background: #e9e9e9;
+}
+.box{
+  margin: 10px;
+}
+/* CONTAINER */
+.container{
+  width: 1350px;
 }
 /* NAV */
-.container{
-  width: 1180px;
-  text-align: center;
-}
 .text-align{
   text-align: left;
 }
@@ -37,8 +39,8 @@ ul li{
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
-  font-size: 14px;
-  margin-top:16px;
+  font-size: 13px;
+  margin-top:15px;
   padding: 8px;
 }
 .border-right{
@@ -51,20 +53,79 @@ ul li{
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   text-align: center;
+  position: relative;
 }
-.text{
-  transform: translateY(250%);
+.text-jumbotron{
+  position: absolute;
+  top: 30%;
 }
-.link {
-  transform: translate(50%,350%);
+.link{
+  position: absolute;
+  top: 50%;
 }
-/* MAIN */
-.box> img{
-  max-height: 450px;
+/*main1*/
+img{
+max-height: 200px;
 }
-.text-bike{
-  padding: 15px;
+.center{
+  text-align: center;
 }
-.btn{
-  font-size: 12px;
+.padding{
+  padding: 10px;
+}
+/* helbiz */
+.helbiz-works{
+  height: 420px;
+  margin-bottom: 150px;
+  background-image: url('../img/helbiz-banner.jpg');
+  background-position: left center;
+  background-size: cover;
+}
+.helbiz-works .col-left,
+.helbiz-works .col-right{
+  margin-top: 440px;
+}
+.col-left .text h3{
+  /*non mi funziona*/
+  display: inline-block;
+  text-align: left;
+}
+
+@media screen and (min-width: 990px){
+  .desktop{
+    display: block;
+  }
+  .scooter{
+    max-height: 300px;
+  }
+  .btn{
+    font-size: 14px;
+  }
+  .s-o{
+    position: relative;
+    top: 50%;
+    left:50%;
+  }
+  .padding span{
+    font-size:16px;
+  }
+  .helbiz-works .iphone{
+    margin-top: 100px;
+    text-align: center;
+  }
+  .helbiz-works .iphone img{
+    max-height:500px;
+    max-width: 100%;
+  }
+  .helbiz-works {
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px){
+  .scooter{
+    max-height: 300px;
+  }
+  .helbiz-works{
+    margin-bottom: 250px;
+  }
 }
