@@ -1,0 +1,70 @@
+/* GENERAL STYLES */
+*{
+  box-sizing: border-box;
+  margin: auto;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+/* STYLE */
+.white{
+  color: white;
+  margin-bottom:10px;
+}
+h3{
+  margin-bottom: 10px;
+}
+/* NAV */
+.container{
+  width: 1180px;
+  text-align: center;
+}
+.text-align{
+  text-align: left;
+}
+.grey{
+  background: #e9e9e9;
+}
+.box{
+  margin: 10px;
+}
+.box> .logo{
+  max-height: 100px;
+  padding: 20px;
+}
+ul li{
+  list-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  margin-top:16px;
+  padding: 8px;
+}
+.border-right{
+ border-right: 2px solid black;
+ padding-right: 8px;
+}
+/* JUMBOTRON */
+.jumbotron{
+  height: 420px;
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  text-align: center;
+}
+.text{
+  transform: translateY(250%);
+}
+.link {
+  transform: translate(50%,350%);
+}
+/* MAIN */
+.box> img{
+  max-height: 450px;
+}
+.text-bike{
+  padding: 15px;
+}
+.btn{
+  font-size: 12px;
+}
