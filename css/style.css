@@ -46,6 +46,7 @@ ul li{
 .border-right{
  border-right: 2px solid black;
  padding-right: 8px;
+ line-height: 0%;
 }
 /* JUMBOTRON */
 .jumbotron{
@@ -63,7 +64,7 @@ ul li{
   position: absolute;
   top: 50%;
 }
-/*main1*/
+/* MAIN-1*/
 img{
 max-height: 200px;
 }
@@ -73,7 +74,7 @@ max-height: 200px;
 .padding{
   padding: 10px;
 }
-/* helbiz */
+/* MAIN-2-HELBIZ */
 .helbiz-works{
   height: 420px;
   margin-bottom: 150px;
@@ -86,9 +87,20 @@ max-height: 200px;
   margin-top: 440px;
 }
 .col-left .text h3{
-  /*non mi funziona*/
-  display: inline-block;
-  text-align: left;
+  text-align: center;
+  }
+  /* MAIN-3-CITIES */
+.cities{
+  height: 420px;
+  margin-bottom: 150px;
+  background-image: url('../img/scooter-bg.jpg');
+  background-size: cover;
+  position: relative;
+  }
+.text-cities{
+  position: absolute;
+  top: 30%;
+  left: 30%;
 }
 
 @media screen and (min-width: 990px){
@@ -120,6 +132,11 @@ max-height: 200px;
   .helbiz-works {
     background-position: center;
   }
+  .text-cities{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+  }
 }
 @media screen and (min-width: 1200px){
   .scooter{
@@ -127,5 +144,10 @@ max-height: 200px;
   }
   .helbiz-works{
     margin-bottom: 250px;
+  }
+  .text-cities{
+    position: absolute;
+    top: 40%;
+    left: 65%;
   }
 }
